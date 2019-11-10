@@ -35,9 +35,6 @@
 
 
 const list = document.querySelector('#book-list ul');
-// const newBook = document.querySelector('#add-book-input');
-// newBook.addEventListener('keypress', addNewBook).value;
-// newBook.value;
 let btn = document.querySelector('#btn');  
 btn.addEventListener('click', addNewBook)
 
@@ -56,7 +53,7 @@ function addNewBook(e) {
  
      //Add Class
     //  span.className = "name"; This one way to add class to HTML element
-        span.classList.add('name'); /*This is another and the best way of adding class*/
+        span.classList.add('name'); /*This is another and the best way to add class*/
      
      //Add TextNode with input value
     //  span.appendChild(document.createTextNode(newBook));
@@ -67,7 +64,7 @@ function addNewBook(e) {
 
     //Addd classes to delete button
     // deleteBtn.className = 'delete'; This one way to add class to HTML element
-    deleteBtn.classList.add('delete') /*This is another and the best way of adding class*/
+    deleteBtn.classList.add('delete') /*This is another and the best way to add class*/
 
     //Append textNode
    // deleteBtn.appendChild(document.createTextNode('delete'));
