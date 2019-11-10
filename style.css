@@ -67,7 +67,7 @@ h1,h2 {
     flex-direction: column;
 }
 
-#book-list ul {
+#book-list #list {
     list-style: none;
     padding: 20px;
 
@@ -162,4 +162,153 @@ li .name:hover {
 
 #add-books label {
     line-height: 52px;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    
+    #book-list #list {
+        list-style: none;
+        padding: 10px;
+    
+    }
+    
+    
+    #book-list {
+        width: 80%;
+        margin: auto;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+  
+
+    #form-div {
+        width: 80%;
+       margin-right: auto;
+       margin-left: 5%;
+    } 
+    
+    #add-books {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: auto;
+    }
+    
+    #add-book-input {
+        margin: 5px auto;
+        width: 90%;
+        padding: 10px 0 10px 10px; 
+        border-radius: 5px;
+    }
+    
+    #btn {
+        width: 94%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #book-list #list {
+        list-style: none;
+        padding: 10px;
+    
+    }
+    
+    
+    #book-list {
+        width: 100%;
+        margin: auto;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+  
+
+    #form-div {
+        width: 80%;
+       /* margin-right: auto;
+       margin-left: ; */
+    } 
+    
+    #add-books {
+        width: 100%;
+        /* margin-left: ;
+        margin-right: auto; */
+    }
+    
+    #add-book-input {
+        margin: 5px auto;
+        width: 90%;
+        padding: 10px 0 10px 10px; 
+        border-radius: 5px;
+    }
+    
+    #btn {
+        width: 94%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+  
+  
 }
