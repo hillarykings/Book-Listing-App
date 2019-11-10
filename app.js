@@ -40,7 +40,8 @@ const list = document.querySelector('#book-list ul');
 // newBook.value;
 let btn = document.querySelector('#btn');  
 btn.addEventListener('click', addNewBook)
-//Add new book
+
+//Add new books
 
 function addNewBook(e) {
     e.preventDefault();
@@ -90,6 +91,59 @@ list.addEventListener('click', function(e){
        }
     }
 })
+
+//Hide Books
+
+const hide = document.querySelector('#hide');
+
+hide.addEventListener('change', hideBox);
+
+function hideBox(e) {
+    if (hide.checked) {
+        list.style.display = "none";
+    } else {
+        list.style.display = 'block';
+    }
+}
+
+//Search Filter Books
+
+const searchBar = document.forms['search-books'].querySelector('input');
+
+
+searchBar.addEventListener('keyup', searchBooks);
+
+function searchBooks(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const books = list.getElementsByTagName('li');
+
+    Array.from(books).forEach(book => {
+        const title = book.firstElementChild.textContent;
+        if(title.toLowerCase().indexOf(searchTerm) != -1){
+            book.style.display = 'block';
+        } else {
+            book.style.display = 'none';
+        }
+    })
+}
+
+// function search(e) {
+//     const searchTerm = e.target.value.toLowerCase();
+//     const book = list.getElementsByTagName('li');
+//     Array.from(book).forEach(bok => {
+//         let title = bok.firstElementChild.textContent;
+//         if(title.toLowerCase().indexOf(searchTerm) != -1){
+//             bok.style.display = 'block';
+//         } else {
+//             bok.style.display = 'none';
+//         }
+//     })
+
+// }
+
+
+
+
 
 
 

@@ -19,12 +19,6 @@
             </div>
         </header>
         <div id="book-list">
-            
-            <div id="form-div">
-                <form action="" id="add-books">
-                    <input type="text" name="search Books" id="add-book-input" placeholder="Add a Books..."><input type="submit" id="btn" placeholder="Add" value="Add">
-                </form>
-            </div>
             <h2 class="title">Books to Read</h2>
             <ul id="list">
                 <li>
@@ -48,6 +42,15 @@
                     <span class="delete">delete</span>
                 </li>
             </ul>
+             <div id="form-div">
+                <form action="" id="add-books">
+                    <div>
+                            <input type="checkbox" name="checkbox" id="hide">
+                            <label for="hide">Hide All Books</label>
+                    </div>
+                    <input type="text" name="search Books" id="add-book-input" placeholder="Add a Books..."><input type="submit" id="btn" placeholder="Add" value="Add">
+                </form>
+            </div>
         </div>
     </div>
 

@@ -80,28 +80,24 @@ h1,h2 {
     border-bottom: 1px solid #ccc;
     margin-bottom: 15px;
 }
-/* 
-#add-book {
-    width: 100%;
-    margin-left: 10%;
-    margin-right: auto;
-} */
 
- #form-div {
-     width: 100%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
+#form-div {
+    width: 100%;
+   display: block;
+   margin-right: auto;
+   margin-left: 5%;
 } 
 
+#add-books {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: auto;
+    display: block;
+}
 
 #add-book-input {
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column; */
-    margin-left: 15%;
-    width: 50%;
+    margin: auto;
+    width: 60%;
     padding: 10px 0 10px 10px; 
     border: none;
     background: #ddd;
@@ -151,4 +147,19 @@ li .name:hover {
     cursor: pointer;
     color: #fff;
     border-radius: 5px;
+}
+
+
+#add-books:after {
+    content: ";
+    display: block;
+    clear: both;
+}
+
+#add-books #hide {
+    width: 30px;
+}
+
+#add-books label {
+    line-height: 52px;
 }
