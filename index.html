@@ -7,7 +7,7 @@
     <title>Book-listing</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="fetchBooks">
     <div id="wrapper">
         <header>
             <div id="page-banner">
@@ -50,6 +50,20 @@
                     </div>
                     <input type="text" name="search Books" id="add-book-input" placeholder="Add Books..."><input type="submit" id="btn" placeholder="Add" value="Add">
                 </form>
+                <div id="tabbed-content">
+                    <ul class="tab">
+                        <li data-target="#about" class="active">About</li>
+                        <li data-target="#contact">Contact</li>
+                    </ul>
+                    <div class="panel active" id="about">
+                        <p>Content for about</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure earum animi excepturi eveniet blanditiis tenetur maiores esse, similique vero, voluptatum autem nobis ex impedit nisi, quod vel cupiditate provident error!</p>
+                    </div>
+                    <div class="panel" id="contact">
+                        <p>Content for Contact</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure earum animi excepturi eveniet blanditiis tenetur maiores esse, similique vero, voluptatum autem nobis ex impedit nisi, quod vel cupiditate provident error!</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -124,20 +124,21 @@ function searchBooks(e) {
     })
 }
 
-// function search(e) {
-//     const searchTerm = e.target.value.toLowerCase();
-//     const book = list.getElementsByTagName('li');
-//     Array.from(book).forEach(bok => {
-//         let title = bok.firstElementChild.textContent;
-//         if(title.toLowerCase().indexOf(searchTerm) != -1){
-//             bok.style.display = 'block';
-//         } else {
-//             bok.style.display = 'none';
-//         }
-//     })
-
-// }
-
+//Tabbed Content 
+const tabs = document.querySelector('.tabs');
+const panels = document.querySelectorAll('.panel');
+tabs.addEventListener('click', function(e){
+    if(e.target.tagName == "li") {
+        const targetPanel = document.querySelector(e.target.dataset.target);
+        panels.forEach(function(panel){
+            if(panel == targetPanel){
+                panel.classList.add('active');
+            } else {
+                panel.classList.remove('active');
+            }
+        })
+    }
+})
 
 
 
